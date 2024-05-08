@@ -11,12 +11,16 @@ body{
     text-align: center;
 }
 h1{
-    padding: 20px 0 45px 0;
+    padding: 20px 0 20px 0;
+    margin-bottom: 65px;
+    background: linear-gradient(to right, #e09eff, #5eca5e, #fcfc78);
 }
 .image_Container{
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap-reverse;
+    grid-template-columns: repeate(auto, fill, minmax(250px, 1fr));
 }
 .card_Container{
     display: flex;
@@ -24,35 +28,44 @@ h1{
     justify-content: center;
     align-items: center;
     margin: 10px;
-    border: 1px solid black;
     padding: 30px;
     border-radius: 10px;
 }
+.card_Container:hover{
+    box-shadow: 0 0 10px black;
+    border: 1px solid black;
+}
 .button_style{
     padding: 5px 10px;
-    border: 1px solid black;
+    border: none;
     border-radius: 10px;
     margin: 10px;
     cursor: pointer;
-    transition: 0.4s all;
     font-weight: bold;
+    transition: 0.4s all;
+}
+.button_container button:hover{
+    transform: scale(0.8);
 }
 .button_container{
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    
 }
 .button_violet{
     background-color: #e09eff;
+
 }
 .button_green{
     background-color: #5eca5e;
+
 }
 .button_yellow{
     background-color: #fcfc78;    
 }
 .button_reset{
-    columns: rgb(1, 139, 185);
+    background-color: rgb(253, 253, 253);
 }
 
